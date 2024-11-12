@@ -1,0 +1,134 @@
+﻿@page
+@{
+    Layout = null;
+    ViewData["Title"] = "Liên Hệ Hỗ Trợ";
+}
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ Hỗ Trợ</title>
+    <link rel="stylesheet" href="~/css/Menu/Menu.css">
+    <style>
+        #main {
+            background-image: url('/img/Match.webp');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <main id="main">
+    <button class="back-button" onclick="window.history.back()">Trở về</button>
+    <section class="page-section " id="portfolio">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">Hỗ Trợ</h2>
+            </div>
+            <div class="container-1">
+                <div class="contact-form">
+    <h3>Liên hệ</h3>
+    <p>Bạn hãy điền nội dung tin nhắn vào form dưới đây và gửi cho chúng tôi. Chúng tôi sẽ trả lời bạn sau khi nhận được.</p>
+                    <form asp-action="SubmitContact" method="post" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Họ tên<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="name" name="Name" placeholder="Nhập họ tên" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email<span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" name="Email" placeholder="Nhập email" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nội dung<span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="message" name="Message" rows="5" placeholder="Nhập nội dung" required></textarea>
+                        </div>
+
+                        <!-- Nút gửi -->
+                        <div id="content">
+                            <button id="Gtn" type="button" class="btn btn-danger" onclick="showThankYouMessage()">GỬI TIN NHẮN</button>
+                        </div>
+                    </form>
+
+                    <!-- Bảng thông báo -->
+                    <div id="thankYouMessage" style="display: none; padding: 20px; background-color: #dff0d8; color: #3c763d; border: 1px solid #3c763d; border-radius: 5px; width: 500px; text-align: left;">
+                       Chúng tôi sẽ liên hệ hỗ trợ sớm nhất có thể!
+                    </div>
+
+                    <script>
+                        function showThankYouMessage() {
+                            // Xóa toàn bộ nội dung của form
+                            document.getElementById("contactForm").innerHTML = "";
+
+                            // Hiển thị bảng thông báo
+                            document.getElementById("thankYouMessage").style.display = "block";
+                        }
+                    </script>
+
+   
+
+    <div class="contact-info">
+        <h4>Thông tin liên hệ</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Đường Cá Koi, Thành phố Cá Koi</p>
+        <p><i class="fas fa-phone"></i> <a href="">0123456789</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="">info@koiworld.vn</a></p>
+    </div>
+</div>
+
+                
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="footer">
+            <div class="footer-thongtin">
+                <h2>Khái Quát</h2>
+                <p style="text-align: justify;">
+                    Koi World là một trong những thương hiệu uy tín hàng đầu chuyên cung cấp các giống cá Koi chất lượng cao, mang lại giá trị và vẻ đẹp cho hồ cá của bạn. Chúng tôi không chỉ cung cấp các giống cá Koi Nhật Bản, mà còn tư vấn và hỗ trợ về cách chăm sóc, thiết kế hồ cá theo phong thủy để mang lại tài lộc và sự thịnh vượng cho gia đình bạn.
+                </p>
+            </div>
+            <div class="footer-thongtin">
+                <h2>Hoạt Động</h2>
+                <div>
+                    <ul>
+                        <li><img src="IMG/icon-arrowright.png" alt="">Về Koi World</li>
+                        <li><img src="IMG/icon-arrowright.png" alt="">Tuyển dụng</li>
+                        <li><img src="IMG/icon-arrowright.png" alt="">Sự kiện và triển lãm cá Koi</li>
+                        <li><img src="IMG/icon-arrowright.png" alt="">Báo chí nói về Koi World</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-thongtin">
+                <h2>Thông tin hữu ích</h2>
+                <div>
+                    <ul>
+                        <li><img src="IMG/icon-arrowright.png" alt=""> Điều khoản sử dụng</a></li>
+                        <li><img src="IMG/icon-arrowright.png" alt=""> Chính sách bảo mật</a></li>
+                        <li><img src="IMG/icon-arrowright.png" alt=""> Bản quyền hình ảnh</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-thongtin">
+                <h2>Thông tin liên lạc</h2>
+                <div id="ketnoi">
+                    CÔNG TY TNHH KOI WORLD<br>
+                    Điện thoại: 0123 456 789 (Hotline)<br>
+                    Email: info@koiworld.vn<br>
+                    Địa chỉ: 123 Đường Cá Koi, Thành phố Cá Koi<br>
+                    Giấy phép kinh doanh: 52-009/2021/TCDL-GP<br>
+                </div>
+                <div id="ketnoi">
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/bcd15b30db.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

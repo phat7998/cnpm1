@@ -1,0 +1,143 @@
+﻿@page
+@{
+    Layout = null;
+    ViewData["Title"] = "Lịch Thi Đấu";
+}
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch Thi Đấu</title>
+    <link rel="stylesheet" href="./css/Menu/Menu.css">
+
+        <style>
+            #main {
+            background-image: url('/img/Match.webp');
+            background-size: cover;
+            background-position: center;
+            }
+        </style>
+ 
+
+</head>
+
+<body >
+    
+    <main id="main">
+        <button class="back-button" onclick="window.history.back()">Trở về</button>
+        <section class="page-section" id="portfolio">
+            <div class="container-1">
+
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Lịch Thi Đấu</h2>
+                </div>
+
+                <div class="text-center">
+                    <!-- First Match -->
+                    <div class="row bg-dark text-white p-3 mb-3 align-items-center">
+                        <div class="col-3 text-center">
+                            <img src="~/img/KoiAsagi.webp" alt="Koi Asagi" style="max-width: 50px;" />
+                            <h5>Koi Asagi</h5>
+                        </div>
+                        <div class="col-6 text-center">
+                            <h5>VS</h5>
+                            <p>20:00</p>
+                            <p>Ngày 25/02/2025</p>
+                            <button class="Button" onclick="">Chưa diễn ra</button>
+                        </div>
+                        <div class="col-3 text-center">
+                            <img src="./img/KoiBekko.webp" alt="Koi Bekko" style="max-width: 50px;" />
+                            <h5>Koi Bekko</h5>
+                        </div>
+                    </div>
+                    <!-- Second Match -->
+                    <div class="row bg-dark text-white p-3 mb-3 align-items-center">
+                        <div class="col-3 text-center">
+                            <img src="~/img/KoiGinrinkoihaku.webp" alt="Koi Ginrin Kohaku" style="max-width: 50px;" />
+                            <h5>Koi Ginrin Kohaku</h5>
+                        </div>
+                        <div class="col-6 text-center">
+                            <h5>VS</h5>
+                            <p>20:00</p>
+                            <p>Ngày 02/03/2025</p>
+                            <button class="Button" onclick="">Chưa diễn ra</button>
+                        </div>
+                        <div class="col-3 text-center">
+                            <img src="~/img/KoiKanoko.webp" alt="Koi Kanoko" style="max-width: 50px;" />
+                            <h5>Koi Kanoko</h5>
+                        </div>
+                    </div>
+                    <!-- Third Match -->
+                    <div class="row bg-dark text-white p-3 mb-3 align-items-center">
+                        <div class="col-3 text-center">
+                            <img src="~/img/KoiKawarimono.webp" alt="Koi Kawarimono" style="max-width: 50px;" />
+                            <h5>Koi Kawarimono</h5>
+                        </div>
+                        <div class="col-6 text-center">
+                            <h5>VS</h5>
+                            <p>20:00</p>
+                            <p>Ngày 04/05/2025</p>
+                            <button class="Button" onclick="">Chưa diễn ra</button>
+                        </div>
+                        <div class="col-3 text-center">
+                            <img src="~/img/KoiKigoi.jpg" alt="Koi Kigoi" style="max-width: 50px;" />
+                            <h5>Koi Kigoi</h5>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="footer">
+            <div class="footer-thongtin">
+                <h2>Khái Quát</h2>
+                <p style="text-align: justify;">
+                    Koi World là một trong những thương hiệu uy tín hàng đầu chuyên cung cấp các giống cá Koi chất lượng cao, mang lại giá trị và vẻ đẹp cho hồ cá của bạn. Chúng tôi không chỉ cung cấp các giống cá Koi Nhật Bản, mà còn tư vấn và hỗ trợ về cách chăm sóc, thiết kế hồ cá theo phong thủy để mang lại tài lộc và sự thịnh vượng cho gia đình bạn.
+                </p>
+            </div>
+            <div class="footer-thongtin">
+                <h2>Hoạt Động</h2>
+                <div>
+                    <ul>
+                        <li><img src="IMG/icon-arrowright.png" alt="">Về Koi World</li>
+                        <li><img src="IMG/icon-arrowright.png" alt="">Tuyển dụng</li>
+                        <li><img src="IMG/icon-arrowright.png" alt="">Sự kiện và triển lãm cá Koi</li>
+                        <li><img src="IMG/icon-arrowright.png" alt="">Báo chí nói về Koi World</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-thongtin">
+                <h2>Thông tin hữu ích</h2>
+                <div>
+                    <ul>         
+                        <li><img src="IMG/icon-arrowright.png" alt=""> Điều khoản sử dụng</a></li>
+                        <li><img src="IMG/icon-arrowright.png" alt=""> Chính sách bảo mật</a></li>
+                        <li><img src="IMG/icon-arrowright.png" alt=""> Bản quyền hình ảnh</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-thongtin">
+                <h2>Thông tin liên lạc</h2>
+                <div id="ketnoi">
+                    CÔNG TY TNHH KOI WORLD<br>
+                    Điện thoại: 0123 456 789 (Hotline)<br>
+                    Email: info@koiworld.vn<br>
+                    Địa chỉ: 123 Đường Cá Koi, Thành phố Cá Koi<br>
+                    Giấy phép kinh doanh: 52-009/2021/TCDL-GP<br>
+                </div>
+                <div id="ketnoi">
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/bcd15b30db.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
